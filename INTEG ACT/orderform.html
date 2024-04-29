@@ -1,0 +1,220 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="tableform.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <title>Order Form</title>
+        <style type="text/css">
+    
+        </style>
+    </head>
+    <body>
+        <div class="tasty">
+            <h1>Tasty<span class="colored">Bites</span></h1>
+        </div>
+            <img src="TastyBites.png" alt="">
+
+        <form method="get" action="customerOutputCall.html">
+    
+            <div class="customer">
+                <table>
+                    <div class="header">
+                        <h1>Customer Information</h1>
+                    </div>
+                    <tr>
+                        <td><label for="name">Name <span class="colored">*</span></label></td>
+                        <td><input type="text" maxlength="50" id="name" placeholder="Full Name" required></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="add">Address <span class="colored">*</span></label></td>
+                        <td><input type="text" + id="add" required></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="tel">Contact No. <span class="colored">*</span></label></td>
+                        <td><input type="tel" id="tel" required  placeholder="0999-999-9999"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="email">Email <span class="colored">*</span></label></td>
+                        <td><input type="email"  id="email" required paceholder="espejo.caren@gmail.com"> </td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="schedule">Schedule of Delivery</label></td>
+                        <td><input type="datetime-local" id="schedule"></td>
+                    </tr>
+    
+                    <tr>
+                        <td><label for="comments">Pin Location</label></td>
+                        <td><textarea name="comments" id="comments" cols="20" rows="3" style="resize: none;"></textarea></td>
+                    </tr>
+                </table>
+                <div class="sub">
+                    <input type="submit" value="Next" style="margin-top: 20px;" formaction="#order">
+                </div>
+            </div>
+        </form>
+    
+        <!--Order Form-->
+        <form method="get" action="orderOutputCall.html">
+            <div class="order" id="order">
+                <div class="header">
+                    <h1>Order Form</h1>
+                </div>
+        
+                <table>
+                    <h2>Burgers</h2>
+                    <label for="burger-type">Choose your burger:</label>
+                    <select name="burger-type" id="burger-type">
+                        <option value="single-patty">Single Patty</option>
+                        <option value="double-patty">Double Patty</option>
+                    </select>
+
+                    <label>Choose your burger toppings:</label>
+                    <div class="checkbox-container">
+                    <div>
+                        <input type="checkbox" id="with-cheese" name="burger-topping" value="with-cheese">
+                        <label for="with-cheese">With Cheese</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="with-coleslaw" name="burger-topping" value="with-coleslaw">
+                        <label for="with-coleslaw">With Coleslaw</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="with-tomato" name="burger-topping" value="with-tomato">
+                        <label for="with-tomato">With Tomato</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="with-onion" name="burger-topping" value="with-onion">
+                        <label for="with-onion">With Onion</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="with-cucumber" name="burger-topping" value="with-cucumber">
+                        <label for="with-cucumber">With Cucumber</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="with-bacon" name="burger-topping" value="with-bacon">
+                        <label for="with-bacon">With Bacon</label>
+                    </div>
+                    </div>
+           
+        
+                    <label for="bun-type">Choose your bun:</label>
+                    <select name="bun-type" id="bun-type">
+                        <option value="white-bun">White Bun</option>
+                        <option value="wheat-bun">Wheat Bun</option>
+                        <option value="honey-oat">Honey Oat</option>
+                        <option value="sugar-free">Sugar-Free</option>
+                    </select>
+        
+                    <label for="burger-quantity">Quantity:</label>
+                    <input type="number" name="burger-quantity" id="burger-quantity" min="1" value="1" style="padding: 5px; width: 40px;">
+        
+                    <h2>Pasta</h2>
+                    <label for="sauce-type">Choose type of Pasta Sauce</label>
+                    <select name="sauce-type" id="sauce-type">
+                    <option value="carbonara">Carbonara</option>
+                    <option value="pesto">Pesto</option>
+                    <option value="spaghetti">Spaghetti</option>
+                    </select>
+            
+                    <label for="pasta-quantity">Quantity:</label>
+                    <input type="number" name="pasta-quantity" id="pasta-quantity" min="1" value="1" style="padding: 5px; width: 40px;">
+            
+                    <h2>Fries</h2>
+                    <label for="flavor">Choose Flavor of Fries:</label>
+                    <select name="flavor" id="flavor">
+                    <option value="bbq">BBQ</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="sourcream">Sour cream</option>
+                    </select>
+            
+                    <tr>
+                        <td><b><label for="size">Size</label></b></td>
+                        <td>
+                            <input type="radio" id="Regular" name="size" value="Regular">
+                            <label for="Regular">Regular</label><br>
+                            <input type="radio" id="Medium" name="size" value="Medium">
+                            <label for="Medium">Medium</label><br>
+                            <input type="radio" id="Large" name="size" value="Large">
+                            <label for="Large">Large</label>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td><b><label for="fries-quantity">Quantity:</label></b></td>
+                        <td>
+                            <input type="number" name="fries-quantity" id="burger-quantity" min="1" value="1" style="padding: 5px; width: 40px;">
+                        </td>
+                    </tr>
+        
+                </table>
+                
+            </form>
+            </div>
+            
+    
+        <form method="get" action="orderOutputCall.html">
+            <div class="feedback">
+                <table>
+                    <tr>
+                        <td><b><label for="mode">Delivery or Pick-up</label></b></td>
+                        <td class="radio-buttons">
+                            <input type="radio" id="Pick-up" name="mode" value="Pick-up">
+                            <label for="Pick-up">Pick-up</label>
+                            <input type="radio" id="Delivery" name="mode" value="Delivery">
+                            <label for="Delivery">Delivery</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>><b><label for="photo">Proof of Payment <span class="colored">*</span></label></b></td>
+                        <td><input type="file" id="photo" name="photo" accept="image/*" multiple="" required></td>
+                    </tr>
+                </table>
+                <div class="sub">
+                    <input type="submit" id="placeOrderbtn" value="Place Order" style="margin-top: 20px;">
+                </div>
+                <script>
+                    // Function to handle the click event of the "Place Order" button
+                    document.getElementById("placeOrderBtn").addEventListener("click", function(event) {
+                        // Prevent the default form submission behavior
+                        event.preventDefault();
+                        
+                        // Show a pop-up window with the message
+                        alert("Your order has been placed!");
+                    });
+                </script>
+
+                <table>
+                    <div class="header">
+                        <h1>Feedback</h1>
+                    </div>
+            
+                    <tr>
+                        <td><b><label for="times">Rate our Delivery Service (Rate from 0-10)</label></b></td>
+                        <td><input type="range" id="times"></td>
+                    </tr>
+            
+                    <tr>
+                        <td><b><label for="feedback">Feedback</label></b></td>
+                        <td><textarea name="feedback" id="feedback" cols="20" rows="3" style="resize: none;"></textarea></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><input type="submit" value="Submit Registration Form" class="orange-button"></td>
+                        <td><input type="reset" value="Clear Registration Form" class="orange-button"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </form>
+    
+    </body>
+    </html>
+    
