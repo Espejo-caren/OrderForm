@@ -1,0 +1,181 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+    background-attachment: fixed;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.customer {
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer label{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="number"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+input {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+.sub input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color:rgb(255, 187, 112);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box; 
+}
+
+.sub input:hover {
+    background-color: rgb(237, 148, 85);
+}
+
+.radio-buttons input[type="radio"] {
+    display: block;
+    margin-left: -110px; 
+}
+
+
+.radio-buttons label{
+    margin-left: 30px;
+    display: block;
+}
+
+
+.checkbox-container div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.checkbox-container input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.checkbox-container label {
+    display: inline-block;
+    margin-right: 5px; 
+    line-height: 30px;
+}
+
+.colored{
+    color: #FF9C00;
+}
+
+.orange-button {
+    background-color: rgb(255, 187, 112);
+    color: white;
+    width: auto;
+    margin-left: 50px;
+}
+
+.orange-button:hover {
+    background-color: rgb(237, 148, 85);
+}
+
+.order {
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+.feedback{
+    max-width: 600px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+img {
+    float: right;
+    margin-right: 40px; /* Add some margin for spacing */
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.tasty h1{
+    font-style: "Luckiest Guy", cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(254, 236, 226);
+    text-shadow: 3px 3px 3px black;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .container {
+        max-width: 1000px;
+    }
+}
