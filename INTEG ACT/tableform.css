@@ -153,29 +153,54 @@ img {
     text-shadow: 3px 3px 3px black;
 }
 
+/* Adjust styles for various screen sizes */
+        @media only screen and (max-width: 767px) {
+            .container {
+                padding: 10px;
+            }
+        }
 
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .customer,
+            .order,
+            .feedback {
+                max-width: 600px;
+                margin: 0 auto;
+            }
 
-@media only screen and (max-width: 767px) {
-    .container {
-        padding: 10px;
-    }
-}
+            .customer table,
+            .order table,
+            .feedback table {
+                width: 100%;
+            }
+        }
 
+        @media only screen and (min-width: 1024px) and (max-width: 1365px) {
+            .customer,
+            .order,
+            .feedback {
+                max-width: 800px;
+                margin: 0 auto;
+            }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        max-width: 600px;
-    }
-}
+            .customer table,
+            .order table,
+            .feedback table {
+                width: 100%;
+            }
+        }
 
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-    .container {
-        max-width: 800px;
-    }
-}
+        @media only screen and (min-width: 1366px) {
+            .customer,
+            .order,
+            .feedback {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
 
-@media only screen and (min-width: 1366px) {
-    .container {
-        max-width: 1000px;
-    }
-}
+            .customer table,
+            .order table,
+            .feedback table {
+                width: 100%;
+            }
+        }
