@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <link rel ="stylesheet" type="text/css" href="tableform.css">
+    <meta charset="UTF-8" />
+    <title>Student Registration Form</title>
+    <style type ="text/css">
+
+    </style>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <div class="header">
+        <h1>Customer Information</h1>
+    </div>
+    <form method="get" action="outputCall.html">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" maxlength="50" id="name" placeholder="Full Name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="add">Address</label></td>
+                <td><input type="text" + id="add" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="tel">Contact No.</label></td>
+                <td><input type="tel" id="tel" required  placeholder="0999-999-9999"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email"  id="email" required paceholder="espejo.caren@gmail.com"> </td>
+            </tr>
+
+            <tr>
+                <td><label for="schedule">Schedule of Delivery</label></td>
+                <td><input type="datetime-local" id="schedule"></td>
+            </tr>
+
+            <tr>
+                <td><label for="comments">Pin Location</label></td>
+                <td><textarea name="comments" id="comments" cols="30" rows="10" style="resize: none;"></textarea></td>
+            </tr>
+
+
+            <!--Country-->
+            <tr>
+                <td><label for="country">Country of Origin</label></td>
+                <td>
+                <select name="country" id="country" size="1">
+                    <option value="Philippines">Philippines</option>
+                    <option value="China">China</option>
+                    <option value="United States of America">United States of America</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Hongkong">Hongkong</option>
+                    <option value="Singapore">Singapore</option>
+                </select>
+                </td>
+            </tr>
+            <!--Radiobutton-->
+            <tr>
+                <td>Block/ Free Section</td>
+                <td>
+                    <input type="Radio" id="block" name="section">
+                    <label for="block">Block Section</label>
+                    <br>
+                    <input type="Radio" id="free" name="section">
+                    <label for="free">Free Section</label>
+                </td>
+            </tr>
+
+            <!--checkbox-->
+            <tr>
+                <td>Course to enroll</td>
+                <td>
+                    <input type="checkbox" id="java" name="course" checked>
+                    <label for="java">Java Programming</label>
+                    <br>
+                    <input type="checkbox" id="python" name="course">
+                    <label for="free">Python Programming</label>
+                </td>
+            </tr>
+
+            <!--Date-->
+            <tr>
+                <td><label for="schedule">Schedule of Course</label></td>
+                <td><input type="datetime-local" id="schedule"></td>
+            </tr>
+
+            <tr>
+                <td><label for="times">Hours can commit to learning Programming Skills</label></td>
+                <td><input type="number" name="times" id="times"></td>
+            </tr>
+
+
+            <!--Slider-->
+            <tr>
+                <td><label for="times">Hours can commit to learning Programming Skills (Input Values From 0-5)</label></td>
+                <td><input type="range" id="times"></td>
+            </tr>
+
+
+            <!--Color-->
+            <tr>
+                <td><label for="color">Choose Color Group</label></td>
+                <td><input type="color" name="color" id="color"></td>
+            </tr>
+
+
+            <!--Photo upload-->
+            <tr>
+                <td>><label for="photo">Upload your 2x2 picture</label></td>
+                <td><input type="file" id="photo" name="photo" accept="image/*" multiple=""></td>
+            </tr>
+
+
+            <!--file upload-->
+            <tr>
+                <td>><label for="file">Upload your file</label></td>
+                <td><input type="file" id="file" name="file"></td>
+            </tr>
+
+            <!--comments-->
+            <tr>
+                <td><label for="comments">Comments and Suggestions</label></td>
+                <td><textarea name="comments" id="comments" cols="30" rows="10" style="resize: none;"></textarea></td>
+            </tr>
+
+
+            <tr>
+                <td><input type="submit" value="Submit Registration Form"></td>
+
+                <td><input type="reset" value="Clear Registration Form"></td>
+            </tr>
+        </table>
+    </form>
+
+    
+</body>
+</html>
